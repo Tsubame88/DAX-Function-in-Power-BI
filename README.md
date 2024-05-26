@@ -20,3 +20,7 @@ Dimentional date table are neccessary to ensure that calculations such as DAX ti
 ## SUNSTITUTE(data, old, new ) 
 
 to replace a character by using DAX intead of performing in Power Query 
+
+## RELATE( column ) 
+
+to coppy a column from different table 
