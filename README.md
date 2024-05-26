@@ -50,7 +50,7 @@ Returns a table that contains a column of dates, shifted either forward or backw
 
 ### Syntax 
 
-DATEADD(<dates>,<number_of_intervals>,<interval>) 
+DATEADD( <dates>, <number_of_intervals>,<interval>) 
 
 **Parameters** 
 + dates : A column that contains dates.
