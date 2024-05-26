@@ -34,12 +34,36 @@ to coppy a column from different table
 is often used in financial comparision analysis to compare two or more events on an anualized basic
 
 Sales YoY %  = 
+
 VAR  SalePriorYear = CALCULATE([Sales], SAMEPERIODLASTYEAR(Dim_DeliveryDate[Delivery Date Key]))
+
 RETURN 
+
 DIVIDE(
     ( [sales] - SalePriorYear),
     SalePriorYear
 )
+
+## DATEADD()
+
+Returns a table that contains a column of dates, shifted either forward or backward in time by the specified number of intervals from the dates in the current context.
+
+### Syntax 
+
+DATEADD(<dates>,<number_of_intervals>,<interval>) 
+
+**Parameters** 
++ dates : A column that contains dates.
++ number_of_intervals :	An integer that specifies the number of intervals to add to or subtract from the dates.
++ interval : The interval by which to shift the dates. The value for interval can be one of the following: year, quarter, month, day
+
+
+### Return value
+A table containing a single column of date values.
+
+### Example 
+
+= DATEADD(DateTime[DateKey],-1,year)
 
 
 
