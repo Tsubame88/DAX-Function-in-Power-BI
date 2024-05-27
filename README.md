@@ -82,4 +82,11 @@ A table containing a single column of date values.
 ## CROSSFILTER()
 Another way, can you Edit interaction under Format ribbon 
 
+## INTERATING FUNCTION
+
+![Sumx](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/ec719a7e-d8e7-4ccd-a53c-c7543cf8a89c)
+![Sumx2](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/e1b67123-6c25-43e6-8ab6-eb2a98367401)
+![rankx](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/93299ff2-8be4-4a66-a10c-fd5b508ce235)
+
+![operation in DAX](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/25f0a12e-7a27-45c8-a2d9-bed864298047)
 
