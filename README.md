@@ -65,5 +65,6 @@ A table containing a single column of date values.
 
 = DATEADD(DateTime[DateKey],-1,year)
 
+## CROSSFILTER()
 
 
