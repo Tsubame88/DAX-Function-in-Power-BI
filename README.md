@@ -65,6 +65,21 @@ A table containing a single column of date values.
 
 = DATEADD(DateTime[DateKey],-1,year)
 
+## CALCULATED()
+
+1. We have a measure that calculate the change YoY% of Avg retail price 
+![Retail Price YoY%](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/03734e74-e5fe-4262-933d-ce5a52ab1777)
+
+2. then add a filter from Dim_Invoice table 
+![Filter](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/a3b040d7-4f0f-4e69-876a-270f8a68ca6f)
+
+3. And when we click on year on filter our chart of YoY% was messed up
+![YoY% changed by filter ](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/85f83df3-6b19-4691-9251-13e092fb4138)
+
+4. Add ALL() to override all the filter from Dim_Invoice Table
+![Calculate_All](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/8483e63d-7f46-42f4-9ca1-86eb89f8c1a5)
+
 ## CROSSFILTER()
+Another way, can you Edit interaction under Format ribbon 
 
 
