@@ -90,3 +90,21 @@ Another way, can you Edit interaction under Format ribbon
 
 ![operation in DAX](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/25f0a12e-7a27-45c8-a2d9-bed864298047)
 
+## HASONEVALUE()
+
+Return TRUE / FALSE
+
+## AND(,)
+
+## USEPRINCIPALNAME( ) 
+
+## RLS 
+
+is perfect tool to manage data access or personalized dashboard 
+
+![manage role RLS](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/24e871a4-113c-4189-9286-14e48a162b4b
+1. Model Wiew >  Manage Role
+2. Create a new role (Ex: Salesperson)
+3. Select [Is Salesperson] column from Dim_Employee Table which return only TRUE/FALSE . This will allow only salesperson to see dashbord
+4. Use USERPRINCIPALNAME () to personalize the dashboard so that each salesperson can only see their own dashboard, can not access to another person's dashboard.
+
