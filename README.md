@@ -102,9 +102,11 @@ Return TRUE / FALSE
 
 is perfect tool to manage data access or personalized dashboard 
 
-![manage role RLS](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/24e871a4-113c-4189-9286-14e48a162b4b
+![manage role RLS](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/e2636ef9-bbf3-490a-97d9-8d27cc3c1b8a)
+
 1. Model Wiew >  Manage Role
 2. Create a new role (Ex: Salesperson)
 3. Select [Is Salesperson] column from Dim_Employee Table which return only TRUE/FALSE . This will allow only salesperson to see dashbord
 4. Use USERPRINCIPALNAME () to personalize the dashboard so that each salesperson can only see their own dashboard, can not access to another person's dashboard.
 
+## SECURITY FILTERING 
