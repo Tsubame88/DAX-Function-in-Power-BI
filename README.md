@@ -110,3 +110,5 @@ is perfect tool to manage data access or personalized dashboard
 4. Use USERPRINCIPALNAME () to personalize the dashboard so that each salesperson can only see their own dashboard, can not access to another person's dashboard.
 
 ## SECURITY FILTERING 
+
+## SUMMERIZE ()
