@@ -94,14 +94,18 @@ Another way, can you Edit interaction under Format ribbon
 
 Return TRUE / FALSE
 
-## AND(,)
-
 ## USEPRINCIPALNAME( ) 
 
 ## RLS 
 
-is perfect tool to manage data access or personalized dashboard 
+is perfect tool to manage data access or personalized dashboard.
 
+The dashboard is presented as below. 
+![dashboard_everyone](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/007e8981-b2ce-4458-83c8-ffc5fb7b7a26)
+Every chart presents the KPI made by all of employee in company, and every one can see the same dashboard.
+Now we will implement Role RLS so that each salesperson can only see their KPI on dashboard. 
+
+### Manage Role RLS
 ![manage role RLS](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/e2636ef9-bbf3-490a-97d9-8d27cc3c1b8a)
 
 1. Model Wiew >  Manage Role
@@ -109,6 +113,27 @@ is perfect tool to manage data access or personalized dashboard
 3. Select [Is Salesperson] column from Dim_Employee Table which return only TRUE/FALSE . This will allow only salesperson to see dashbord
 4. Use USERPRINCIPALNAME () to personalize the dashboard so that each salesperson can only see their own dashboard, can not access to another person's dashboard.
 
+### Test of Role RLS :  check how the dashboard be seen from employee name Lily Code 
+1. Model View > View As
+2. Check to
+   - [x]Other Users
+   - [x]Salesperson
+3. Type the email adress of Lily Code in the white box :  lily.code@wwi.com   
+![test role RSL](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/dc0216bd-b3c1-4689-8188-12860341880b)
+
+### Lily's dashboard 
+Except for the "Distinct Count City" card every visual was changed and now just presents these KPIs related to Employee named LiLy Code.   
+![sercurity filtering_lily](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/1729da26-d42c-44f6-988d-ba6610548d4f)
+
 ## SECURITY FILTERING 
+In this above example  "Distinct Count City" card  doesn't change when we conduct Role RLS.
+
+That's because :
+1.  "Distinct Count City" card has value from measure DISTINCTCOUNT(Dim_City[WWI City ID]), Dim_City and Fact_Sales has a relationship one way from Dim_City to Fact_Sales so this measure count the distinct city in Fact_sales table which locate in Dim_city table 
+2. Above we setup the RLS from Dim_Employee table which has one way relationship to Fact_Sales table so it will filter the Fact_Sales Table but because there is no relationship from Fact_Sale to Dim_City, so there is no relation ship between Dim_Employee and Dim_City.
+
+To present the correct information on the "Distinct Count City" card, we have to edit the relationship between Fact_Sales and Dim_City to Cross-filter dicrection & Apply security Filter to both direction 
+![cross filter](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/d39bae39-45a6-40fe-9152-1eb4e683a2cf)
+
 
 ## SUMMERIZE ()
