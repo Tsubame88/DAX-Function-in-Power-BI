@@ -98,7 +98,7 @@ Return TRUE / FALSE
 
 ## RLS 
 
-is perfect tool to manage data access or personalized dashboard.
+is used to manage data access for given users or personalized dashboard.
 
 The dashboard is presented as below. 
 ![dashboard_everyone](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/007e8981-b2ce-4458-83c8-ffc5fb7b7a26)
