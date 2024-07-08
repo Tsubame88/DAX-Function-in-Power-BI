@@ -136,4 +136,7 @@ To present the correct information on the "Distinct Count City" card, we have to
 ![cross filter](https://github.com/Tsubame88/DAX-Function-in-Power-BI/assets/156522557/d39bae39-45a6-40fe-9152-1eb4e683a2cf)
 
 
-## SUMMERIZE ()
+## SUMMARIZE ()
+
+
+
